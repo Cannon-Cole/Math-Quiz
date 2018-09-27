@@ -13,8 +13,10 @@ namespace Math_Quiz
 {
     public partial class Form1 : Form
     {
-        //generate random numbers
+        //adds date to top
+        DateTime today = DateTime.Today;
 
+        //generate random numbers
         Random randomizer = new Random();
 
         //stores addition questions
@@ -35,7 +37,7 @@ namespace Math_Quiz
 
         //fills in all problems and starts timer
         public void StartTheQuiz()
-        {
+        { 
             //assigns random numbers for math problem
             addend1 = randomizer.Next(51);
             addend2 = randomizer.Next(51);
@@ -69,7 +71,6 @@ namespace Math_Quiz
             dividedRightLabel.Text = divisor.ToString();
             quotient.Value = 0;
 
-
             //starts timer
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
@@ -92,6 +93,8 @@ namespace Math_Quiz
         public Form1()
         {
             InitializeComponent();
+
+            labelDate.Text = today.ToString("dd MMMM yyyy");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -206,6 +209,11 @@ namespace Math_Quiz
                 SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
                 simpleSound.Play();
             }
+        }
+
+        private void labelDate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
