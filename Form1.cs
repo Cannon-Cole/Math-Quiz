@@ -198,5 +198,14 @@ namespace Math_Quiz
                 simpleSound.Play();
             }
         }
+
+        private void divide_ValueChanged(object sender, EventArgs e)
+        {
+            if (dividend / divisor == quotient.Value)
+            {
+                SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
+                simpleSound.Play();
+            }
+        }
     }
 }
