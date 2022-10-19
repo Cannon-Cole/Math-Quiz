@@ -1,2 +1,2 @@
 <h1>What is this?</h1>
-Gives you two numbers and an operator such as +-*/ and you need to put in the answer. Built in C# & .NET.
+Timed math quiz game where you must solve an addtion, subtraction, multiplication, and division problem. Problems formatted in variable operator variable format. Also displays the current date. Built in C# & .NET.
