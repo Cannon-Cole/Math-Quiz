@@ -179,8 +179,8 @@ namespace Math_Quiz
         {
             if (addend1 + addend2 == sum.Value)
             {
-                SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
-                simpleSound.Play();
+                SoundPlayer simpleSound = new SoundPlayer(@"");
+                //simpleSound.Play();
             }
         }
 
@@ -188,8 +188,8 @@ namespace Math_Quiz
         {
             if (minuend - subtrahend == difference.Value)
             {
-                SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
-                simpleSound.Play();
+                SoundPlayer simpleSound = new SoundPlayer(@"");
+                //simpleSound.Play();
             }
         }
 
@@ -197,8 +197,8 @@ namespace Math_Quiz
         {
             if (multiplicand * multiplier == product.Value)
             {
-                SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
-                simpleSound.Play();
+                SoundPlayer simpleSound = new SoundPlayer(@"");
+                //simpleSound.Play();
             }
         }
 
@@ -206,8 +206,8 @@ namespace Math_Quiz
         {
             if (dividend / divisor == quotient.Value)
             {
-                SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Cliff\source\repos\Math Quiz\chime.wav");
-                simpleSound.Play();
+                SoundPlayer simpleSound = new SoundPlayer(@"");
+                //simpleSound.Play();
             }
         }
 
